@@ -50,30 +50,54 @@
                 width: 100%;
                 max-width: 500px;
                 justify-content: left;
-                margin:auto 0px;
-                margin-top:25px;
-                gap:10px;
                 box-sizing: border-box;
                }
+            .search-box {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                margin-top: 25px;
+            }
             .button{
                 font-family: inherit;
-                font-size: 2rem;
-                padding: 6px 12px;
+                font-size: 1.5rem;
+                padding: 10px 20px;
                 background-color: #023A5A;
                 color: white;
                 border: none;
                 border-radius: 6px;
                 cursor: pointer;
+                white-space: nowrap;
             }
              .imgbackground{
                 width: 100%;
-                max-width: 700px;
+                max-width: 500px;
                 height: auto;
                 display: block;
             }
             .img{
-                max-width: 300px;
-                max-height: 200px;
+                width: 120px;
+                height: 120px;
+                object-fit: contain;
+            }
+            .img-baihoc {
+                width: 150px;
+                height: 150px;
+                object-fit: contain;
+            }
+            .img-baitap {
+                width: 130px;
+                height: 130px;
+                object-fit: contain;
+            }
+            .img-luyen {
+                width: 130px;
+                height: 130px;
+                object-fit: contain;
+            }
+            .img-chia {
+                width: 130px;
+                height: 130px;
                 object-fit: contain;
             }
             .top{
@@ -114,18 +138,17 @@
             <a href="bài-học.html"; class="nav-item" style="border: 2px solid #023A5A; border-radius: 10px;">
                 <div class="nav-list">
                     <pre>    Bài Học </pre>
-                    <img src="https://i.ibb.co/XxLCJXkJ/B-n-sao-c-a-background-v-t-l-113-x-151-px-Trang-web-png.png" style="max-width: 150px;
-                max-height: 400px;
-                object-fit: contain;">
-                <span> <p class="top"> tóm tắt lý thuyết,</p>
-                    <pre class="top"> công thức    </pre>
-                    <p class="top">  ví dụ minh họa   </p></span>
+                    <img src="https://i.ibb.co/XxLCJXkJ/B-n-sao-c-a-background-v-t-l-113-x-151-px-Trang-web-png.png" class="img-baihoc">
+                    <p>
+                        Tóm tắt lý thuyết<br>
+                        Công thức
+                    </p>
                 </div>
             </a>
             <a href="bài-tập.html"; class="nav-item" style="border: 2px solid #023A5A;  border-radius: 10px;">
                 <div class="nav-list">
                     <pre>    Bài Tập </pre>
-                    <img src="https://i.ibb.co/dsVmcYvS/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-8.png" class="img" >
+                    <img src="https://i.ibb.co/dsVmcYvS/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-8.png" class="img-baitap" >
                     <p>
                         Câu hỏi luyện tập<br>
                         Chấm điểm tự động
@@ -135,7 +158,7 @@
             <a href="luyện-tập.html"; class="nav-item" style="border: 2px solid #023A5A;  border-radius: 10px;">
                 <div class="nav-list">
                     <pre>    Luyện Đề </pre>
-                    <img src= "https://i.ibb.co/gFLF7PkW/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-10.png"   class="img" >
+                    <img src= "https://i.ibb.co/gFLF7PkW/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-10.png"   class="img-luyen" >
                     <p>
                         Đề dự thi,bài tập<br>
                         Phân tích đáp án
@@ -145,7 +168,7 @@
             <a  class="nav-item" style="border: 2px solid #023A5A;  border-radius: 10px;">
                 <div class="nav-list">
                     <pre>    Chia Sẻ </pre>
-                    <img src= "https://i.ibb.co/JWRF3ryT/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-11.png" class="img" >
+                    <img src= "https://i.ibb.co/JWRF3ryT/B-n-sao-c-a-background-v-t-l-113-x-151-px-1080-x-1080-px-11.png" class="img-chia" >
                     <p>
                         Chia sẻ tài liệu<br>
                         Kinh nghiệm học tập
