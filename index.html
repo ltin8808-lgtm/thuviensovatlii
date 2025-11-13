@@ -16,6 +16,7 @@
                 color: #023A5A;
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
             }
             .nav-item{
                 font-family: inherit;
@@ -52,7 +53,9 @@
                 font-size: 2rem;
                 border: 1px solid #ccc;
                 border-radius: 6px;
-                width: 500px;
+                width: 100%;
+                max-width: 500px;
+                box-sizing: border-box;
                 justify-content: left;
                 margin:auto 0px;
                 margin-top:25px;
@@ -70,12 +73,14 @@
             }
             .imgbackground{
                 width:450px;
-                height:300px;
+                height:auto ;
                 display:block;
+                width: 100%;
             }
             .img{
                 width:200px;
-                height:200px;
+                height:auto ;
+                width: 100%;
             }
             .top{
                 margin-top: 0px;
