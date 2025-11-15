@@ -92,16 +92,12 @@
                 border-radius: 6px;
                 width: 100%;
                 max-width: 500px;
-                justify-content: left;
-                margin:auto 0px;
-                margin-top:25px;
-                gap:10px;
                 box-sizing: border-box;
-               }
+            }
             .button{
                 font-family: inherit;
-                font-size: 2rem;
-                padding: 6px 12px;
+                font-size: 1.5rem;
+                padding: 10px 30px;
                 background-color: #023A5A;
                 color: white;
                 border: none;
