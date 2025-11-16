@@ -63,6 +63,13 @@
                 margin: 0 8px;
                 font-size: 2rem ;
             }
+            .nav-list5{ 
+                font-family: inherit;
+                color: #023A5A;
+                margin-top:0px;
+                padding:0;
+                font-size: 1.5rem ;
+            }
             .p{
                 font-family: inherit;
                 font-size: 2.5rem;
@@ -129,4 +136,19 @@
             .top{
                 margin-top: 0px;
                 margin-bottom: 0px;
+            }
+            .item .content {
+                display: none; /* ẩn nội dung */
+                padding: 10px;
+                background: #f0f0f0;
+            }
+            .title{
+                font-family: inherit;
+                color: #023A5A;
+                margin-top:0px;
+                padding:0;
+                font-size: 2rem ;
+            }
+            .item.active .content {
+               display: block; /* hiện nội dung khi active */
             }
