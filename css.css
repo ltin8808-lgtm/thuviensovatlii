@@ -11,10 +11,21 @@
                 flex-wrap: wrap;
                 gap: 20px;
             }
+            .nav2 {
+                margin: 25px;
+                color: #023A5A;
+                display: flex;
+                justify-content: space-between;
+            }
             .nav3 {
                 color: #023A5A;
                 display: flex;
                 justify-content: space-between;
+            }
+            .nav4 {
+                color: #023A5A;
+                display: flex;
+                justify-content: left;
             }
             .nav-item{
                 font-family: inherit;
@@ -80,6 +91,13 @@
                 margin-top: 50px;
                 margin-bottom: -70px;
             }
+            .p3{
+                font-family: inherit;
+                font-size: 4rem;
+                margin-top: 0px;
+                margin-bottom: -110px;
+                margin-left: 150px;
+             }
             .span{
                 font-family: inherit;
                 font-size: 50px;
@@ -133,10 +151,16 @@
                 height: 120px;
                 object-fit: contain;
             }
+            .img3{
+                width: 170px;
+                height: 170px;
+                object-fit: contain;
+            }
             .top{
                 margin-top: 0px;
                 margin-bottom: 0px;
             }
+/*javasprit*/
             .item .content {
                 display: none; /* ẩn nội dung */
                 padding: 10px;
@@ -151,4 +175,30 @@
             }
             .item.active .content {
                display: block; /* hiện nội dung khi active */
+            }
+
+            /* Remove default bullets and style the accordion list links */
+            .content{
+                list-style: none;
+                margin: 0;
+                padding-left: 0;
+            }
+            .content li{
+                margin: 0;
+                padding: 0;
+            }
+            .content li a{
+                display: block; /* makes the whole row clickable */
+                text-decoration: none; /* remove underline */
+                color: inherit; /* keep same color as surrounding text */
+                padding: 8px 12px;
+                border-radius: 6px;
+            }
+            .content li a:hover{
+                background: #e9f5fb; /* subtle hover */
+            }
+
+            /* Optional: smaller gap between title and list */
+            .item .title{
+                cursor: pointer;
             }
