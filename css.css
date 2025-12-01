@@ -27,6 +27,102 @@
                 display: flex;
                 justify-content: left;
             }
+            /* Card row on index page: center the feature cards and make them uniform */
+            .card-row{
+                display: flex;
+                justify-content: center;
+                gap: 28px;
+                /* keep them on one line on wider screens */
+                flex-wrap: nowrap;
+                align-items: stretch;
+                padding: 6px 8px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            /* Each card: fixed width (equal), centered content, prettier look */
+            .card-row .nav-item{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 22px 18px;
+                width: 280px;
+                min-width: 280px;
+                box-sizing: border-box;
+                background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(247,250,255,0.96));
+                border-radius: 12px;
+                border: 1px solid rgba(2,58,90,0.06);
+                transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+                box-shadow: 0 8px 20px rgba(2,58,90,0.05);
+                text-decoration: none;
+                color: inherit;
+                /* ensure cards have same visible height */
+                min-height: 340px;
+                /* make inner content distribute so cards align vertically */
+                justify-content: space-between;
+            }
+
+            .card-row .nav-item:hover{
+                transform: translateY(-8px) scale(1.01);
+                box-shadow: 0 24px 54px rgba(2,58,90,0.14);
+                border-color: rgba(11,107,97,0.14);
+            }
+
+            .card-row .nav-item .nav-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                width: 100%;
+                min-height: 160px;
+                /* allow the list area to grow so all cards match height */
+                flex: 1 1 auto;
+            }
+
+            /* Slightly larger headings inside cards */
+            .card-row .nav-item .nav-list pre{
+                margin: 0;
+                font-family: inherit;
+                font-weight: 800;
+                font-size: 1.28rem;
+                color: var(--accent, #0b6b61);
+                background: transparent;
+                line-height: 1.08;
+                letter-spacing: -0.02em;
+            }
+
+            .card-row .nav-item .img2{
+                margin: 6px auto;
+                display:block;
+                width: 128px;
+                height: 128px;
+                object-fit: cover;
+                border-radius: 10px;
+                background: rgba(0,0,0,0.03);
+                padding: 6px;
+            }
+
+            .card-row .nav-item p{
+                margin: 8px 0 0 0;
+                font-size: 18px;
+                color: #3f4a50;
+                line-height: 1.45;
+            }
+
+            /* Responsive: allow wrapping on smaller screens so cards fit vertically */
+            @media (max-width: 920px){
+                .card-row{ flex-wrap: wrap; gap: 18px; }
+                .card-row .nav-item{ width: 240px; min-width: 240px; }
+                .card-row .nav-item .img2{ width: 110px; height: 110px; }
+            }
+
+            @media (max-width: 640px){
+                .card-row{ gap: 12px; padding: 8px; }
+                .card-row .nav-item{ width: calc(100% - 32px); min-width: 0; padding: 14px; }
+                .card-row .nav-item .img2{ width: 92px; height: 92px; }
+            }
             .nav-item{
                 font-family: inherit;
                 color: #023A5A;
@@ -48,31 +144,42 @@
                 display:inline-block;
                 font-size: 1.5rem ;
             }
-            .nav-list2{ 
+            .nav-list2,
+            .nav-list3,
+            .nav-list4{
                 font-family: inherit;
                 color: #023A5A;
+                font-weight: 700;
+                letter-spacing: -0.01em;
+            }
+            .nav-list2{
                 margin-top:0px;
                 padding:0;
                 font-size: 2rem ;
             }
-             .nav-list3{ 
-                font-family: inherit;
-                color: #023A5A;
+            .nav-list3{
                 list-style: none;
                 display:inline-block;
-                margin: 50px;
-                padding: 20px;
-                font-size: 2.5rem;
+                margin: 18px 22px;
+                padding: 10px 16px;
+                font-size: 2.2rem;
                 border: 2px solid #023A5A;
                 border-radius: 10px;
+                background: rgba(2,58,90,0.02);
             }
-            .nav-list4{ 
-                font-family: inherit;
-                color: #023A5A;
+            .nav-list4{
                 list-style: none;
                 display:inline-block;
                 margin: 0 8px;
                 font-size: 2rem ;
+            }
+            /* Ensure anchors inside these list items inherit the same style and have no underline */
+            .nav-list2 a,
+            .nav-list3 a,
+            .nav-list4 a{
+                text-decoration: none;
+                color: inherit;
+                font-weight: 700;
             }
             .nav-list5{ 
                 font-family: inherit;
@@ -81,29 +188,26 @@
                 padding:0;
                 font-size: 1.5rem ;
             }
-            .p{
-                font-family: inherit;
-                font-size: 2.5rem;
-            }
-            .p2{
-                font-family: inherit;
-                font-size: 6rem;
-                margin-top: 50px;
-                margin-bottom: -70px;
-            }
+            .p,
+            .p2,
             .p3{
                 font-family: inherit;
-                font-size: 4rem;
-                margin-top: 0px;
-                margin-bottom: -110px;
-                margin-left: 150px;
-             }
+                color: #023A5A;
+                font-weight: 700;
+                letter-spacing: -0.01em;
+                line-height: 1.05;
+            }
+            .p{ font-size: 2.4rem; margin: 0 0 6px 0; }
+            .p2{ font-size: 3.2rem; margin-top: 18px; margin-bottom: 4px; }
+            .p3{ font-size: 2.8rem; margin: 0; }
             .span{
                 font-family: inherit;
-                font-size: 50px;
+                font-size: 2.4rem;
+                font-weight: 700;
                 color: #023A5A;
-                margin-bottom: 60px;
-                margin-top:100px;
+                letter-spacing: -0.01em;
+                margin-bottom: 28px;
+                margin-top:80px;
             }
             .div{
                 font-family: inherit;
@@ -117,25 +221,39 @@
             }
             .search-box input {
                 font-family: inherit;
-                padding: 6px 10px;
-                font-size: 2rem;
-                border: 1px solid #ccc;
-                border-radius: 6px;
+                padding: 10px 14px;
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: #023A5A;
+                border: 1px solid rgba(2,58,90,0.12);
+                background: rgba(2,58,90,0.03);
+                border-radius: 10px;
                 width: 100%;
-                max-width: 500px;
+                max-width: 560px;
                 box-sizing: border-box;
+                outline: none;
+                transition: box-shadow 180ms ease, border-color 180ms ease;
             }
+            .search-box input:focus{
+                box-shadow: 0 8px 20px rgba(2,58,90,0.08);
+                border-color: rgba(2,58,90,0.22);
+            }
+            .search-box input::placeholder{ color: rgba(2,58,90,0.48); font-weight:600; }
             .button{
                 font-family: inherit;
-                font-size: 1.5rem;
-                padding: 10px 30px;
+                font-size: 1.7rem;
+                font-weight: 700;
+                padding: 10px 28px;
                 background-color: #023A5A;
                 color: white;
                 border: none;
-                border-radius: 6px;
+                border-radius: 10px;
                 cursor: pointer;
                 white-space: nowrap;
+                box-shadow: 0 8px 18px rgba(2,58,90,0.12);
+                transition: transform 160ms ease, box-shadow 160ms ease, opacity 160ms ease;
             }
+            .button:hover{ transform: translateY(-2px); box-shadow: 0 18px 40px rgba(2,58,90,0.16); }
             .imgbackground{
                 width: 100%;
                 max-width: 350px;
@@ -201,4 +319,32 @@
             /* Optional: smaller gap between title and list */
             .item .title{
                 cursor: pointer;
+            }
+
+            /* Remove underline for navigation and page links site-wide, keep color consistent */
+            .nav a,
+            .nav-list a,
+            .nav-item a,
+            .card-row a,
+            a.content-link,
+            .content a,
+            #search-results a{
+                text-decoration: none;
+                color: inherit;
+            }
+            .nav a:visited,
+            .nav-list a:visited,
+            .nav-item a:visited,
+            .card-row a:visited,
+            .content a:visited,
+            #search-results a:visited{
+                color: inherit;
+            }
+            .nav a:hover,
+            .nav-list a:hover,
+            .card-row a:hover,
+            .content a:hover,
+            #search-results a:hover{
+                text-decoration: none;
+                color: var(--accent, #0b6b61);
             }

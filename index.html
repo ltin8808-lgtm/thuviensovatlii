@@ -26,15 +26,90 @@
                         Qua Không Gian Số!
                     </span>
                     <form action="/search" method="GET" class="search-box">
-                        <input type="text" name="q" placeholder="Tìm kiếm bài học" aria-label="Tìm Kiếm">
+                        <input id="search-input" list="search-suggestions" type="text" name="q" placeholder="Tìm kiếm bài học" aria-label="Tìm Kiếm" autocomplete="off">
+                        <datalist id="search-suggestions"></datalist>
                         <button type="submit" class="button"> 
                         Tìm kiếm
                         </button>
                     </form>
+                    <div id="search-results" class="search-results" aria-live="polite" style="margin-top:8px"></div>
+                                        <script>
+                                                // Embedded fallback search index for local file:// use where fetch() may be blocked
+                                                window.__SEARCH_INDEX = 
+                                                [
+
+    {"title":"lớp 10/bài-học/chương-1/bài 1","url":"lớp 10/bài-học/chương-1/bài-1.html"},
+    {"title":"lớp 10/bài-học/chương-1/bài 2","url":"lớp 10/bài-học/chương-1/bài-2.html"},
+    {"title":"lớp 10/bài-học/chương-1/bài 3","url":"lớp 10/bài-học/chương-1/bài-3.html"},
+
+    {"title":"lớp 10/bài-học/chương-2/bài 4","url":"lớp 10/bài-học/chương-2/bài-4.html"},
+    {"title":"lớp 10/bài-học/chương-2/bài 5","url":"lớp 10/bài-học/chương-2/bài-5.html"},
+
+    {"title":"lớp 10/bài-học/chương-3/bài 7","url":"lớp 10/bài-học/chương-3/bài-7.html"},
+    {"title":"lớp 10/bài-học/chương-3/bài 8","url":"lớp 10/bài-học/chương-3/bài-8.html"},
+    {"title":"lớp 10/bài-học/chương-3/bài 9","url":"lớp 10/bài-học/chương-3/bài-9.html"},
+
+    {"title":"lớp 10/bài-học/chương-4/bài 10","url":"lớp 10/bài-học/chương-4/bài-10.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 11","url":"lớp 10/bài-học/chương-4/bài-11.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 12","url":"lớp 10/bài-học/chương-4/bài-12.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 12.1","url":"lớp 10/bài-học/chương-4/bài-12.1.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 13","url":"lớp 10/bài-học/chương-4/bài-13.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 14","url":"lớp 10/bài-học/chương-4/bài-14.html"},
+    {"title":"lớp 10/bài-học/chương-4/bài 15","url":"lớp 10/bài-học/chương-4/bài-15.html"},
+
+    {"title":"lớp 10/bài-học/chương-5/bài 16","url":"lớp 10/bài-học/chương-5/bài-16.html"},
+    {"title":"lớp 10/bài-học/chương-5/bài 17","url":"lớp 10/bài-học/chương-5/bài-17.html"},
+
+    {"title":"lớp 10/bài-học/chương-6/bài 18","url":"lớp 10/bài-học/chương-6/bài-18.html"},
+    {"title":"lớp 10/bài-học/chương-6/bài 19","url":"lớp 10/bài-học/chương-6/bài-19.html"},
+    {"title":"lớp 10/bài-học/chương-6/bài 20","url":"lớp 10/bài-học/chương-6/bài-20.html"},
+    {"title":"lớp 10/bài-học/chương-6/bài 21","url":"lớp 10/bài-học/chương-6/bài-21.html"},
+    {"title":"lớp 10/bài-học/chương-6/bài 22","url":"lớp 10/bài-học/chương-6/bài-22.html"},
+
+    {"title":"lớp 10/bài-học/chương-7/bài 23","url":"lớp 10/bài-học/chương-7/bài-23.html"},
+    {"title":"lớp 10/bài-học/chương-7/bài 24","url":"lớp 10/bài-học/chương-7/bài-24.html"},
+    {"title":"lớp 10/bài-học/chương-8/bài 25","url":"lớp 10/bài-học/chương-8/bài-25.html"},
+    {"title":"lớp 10/bài-học/chương-9/bài 26","url":"lớp 10/bài-học/chương-9/bài-26.html"},
+    {"title":"lớp 10/bài-học/chương-9/bài 27","url":"lớp 10/bài-học/chương-9/bài-27.html"},
+
+    {"title":"lớp 10/bài-tập/chương-1/bài 1","url":"lớp 10/bài-tập/chương-1/bài-1.html"},
+    {"title":"lớp 10/bài-tập/chương-1/bài 2","url":"lớp 10/bài-tập/chương-1/bài-2.html"},
+    {"title":"lớp 10/bài-tập/chương-1/bài 3","url":"lớp 10/bài-tập/chương-1/bài-3.html"},
+
+    {"title":"lớp 10/bài-tập/chương-2/bài 4","url":"lớp 10/bài-tập/chương-2/bài-4.html"},
+    {"title":"lớp 10/bài-tập/chương-2/bài 5","url":"lớp 10/bài-tập/chương-2/bài-5.html"},
+
+    {"title":"lớp 10/bài-tập/chương-3/bài 7","url":"lớp 10/bài-tập/chương-3/bài-7.html"},
+    {"title":"lớp 10/bài-tập/chương-3/bài 8","url":"lớp 10/bài-tập/chương-3/bài-8.html"},
+    {"title":"lớp 10/bài-tập/chương-3/bài 9","url":"lớp 10/bài-tập/chương-3/bài-9.html"},
+
+    {"title":"lớp 10/bài-tập/chương-4/bài 10","url":"lớp 10/bài-tập/chương-4/bài-10.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 11","url":"lớp 10/bài-tập/chương-4/bài-11.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 12","url":"lớp 10/bài-tập/chương-4/bài-12.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 13","url":"lớp 10/bài-tập/chương-4/bài-13.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 14","url":"lớp 10/bài-tập/chương-4/bài-14.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 15","url":"lớp 10/bài-tập/chương-4/bài-15.html"},
+    {"title":"lớp 10/bài-tập/chương-4/bài 16","url":"lớp 10/bài-tập/chương-4/bài-16.html"},
+
+    {"title":"lớp 10/bài-tập/chương-5/bài 17","url":"lớp 10/bài-tập/chương-5/bài-17.html"},
+    {"title":"lớp 10/bài-tập/chương-5/bài 18","url":"lớp 10/bài-tập/chương-5/bài-18.html"},
+
+    {"title":"lớp 10/bài-tập/chương-6/bài 18.1","url":"lớp 10/bài-tập/chương-6/bài-18.1.html"},
+    {"title":"lớp 10/bài-tập/chương-6/bài 19","url":"lớp 10/bài-tập/chương-6/bài-19.html"},
+    {"title":"lớp 10/bài-tập/chương-6/bài 20","url":"lớp 10/bài-tập/chương-6/bài-20.html"},
+    {"title":"lớp 10/bài-tập/chương-6/bài 21","url":"lớp 10/bài-tập/chương-6/bài-21.html"},
+    {"title":"lớp 10/bài-tập/chương-6/bài 22","url":"lớp 10/bài-tập/chương-6/bài-22.html"},
+
+    {"title":"lớp 10/bài-tập/chương-7/bài 23","url":"lớp 10/bài-tập/chương-7/bài-23.html"},
+    {"title":"lớp 10/bài-tập/chương-7/bài 24","url":"lớp 10/bài-tập/chương-7/bài-24.html"},
+    {"title":"lớp 10/bài-tập/chương-8/bài 25","url":"lớp 10/bài-tập/chương-8/bài-25.html"},
+]
+                                        </script>
+                    </script>
                 </div>
                 <img src="https://i.ibb.co/WWhqZ7q6/c-b-web.png" class="imgbackground">
             </div>    
-        <div class="nav" style="margin-top:100px ">
+        <div class="nav card-row" style="margin-top:100px ">
             <a href="bài-học.html"; class="nav-item" style="border: 2px solid #023A5A; border-radius: 10px;">
                 <div class="nav-list">
                     <pre>    Bài Học </pre>
@@ -76,4 +151,6 @@
                 </div>
             </a>    
         </div>
+    <script src="js.js"></script>
+</body>
 </html>

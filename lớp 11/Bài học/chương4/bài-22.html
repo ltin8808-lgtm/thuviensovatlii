@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHỦ ĐỀ 14 – THỰC HÀNH ĐO TỐC ĐỘ TRUYỀN ÂM</title>
+    <link href="../../../css.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <style>
+      .lesson-title { background: linear-gradient(90deg,#0b6b9e,#2aa7d1); color:#fff; padding:12px 16px; border-radius:8px; }
+      .chapter-title { color:#023A5A; font-weight:700; }
+      .section-title { color:#0b6b9e; font-weight:600; margin-top:16px; }
+      .subsection-title { color:#056a8c; font-weight:600; margin-top:12px; }
+      .content { background:#fff; padding:14px; border-radius:8px; box-shadow:0 1px 4px rgba(2,40,60,0.06); }
+      .formula-box { background:#fff8e6; border-left:4px solid #ffb84d; padding:8px 12px; margin:8px 0; border-radius:4px; font-family:monospace; }
+      .example { background:#f7fbff; border-left:4px solid #2aa7d1; padding:8px 12px; margin:8px 0; border-radius:4px; }
+      table { border-collapse:collapse; width:100%; margin-top:8px; }
+      td, th { border:1px solid #e6eef5; padding:8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chapter-title">CHƯƠNG II - SÓNG</div>
+      <div class="lesson-title">CHỦ ĐỀ 14: THỰC HÀNH ĐO TỐC ĐỘ TRUYỀN ÂM</div>
+
+      <div class="section-title">I. TÓM TẮT LÝ THUYẾT</div>
+      <div class="content">
+        <div class="subsection-title">1. Tính tốc độ truyền âm trong không khí nhờ hiện tượng sóng dừng</div>
+        <ul>
+          <li>Ống khí một đầu kín, một đầu hở: nghe được âm cộng hưởng (to nhất tại bụng sóng) khi chiều dài cột không khí là L = (2n+1)λ/4.</li>
+          <li>Chênh lệch chiều dài giữa hai lần liên tiếp nghe cộng hưởng (hai bụng liên tiếp): ΔL = λ/2.</li>
+          <li>Tốc độ truyền âm: v = fλ.</li>
+        </ul>
+
+        <div class="subsection-title">2. Thí nghiệm đo tốc độ truyền âm</div>
+        <p><strong>Mục đích:</strong> Đo tốc độ truyền âm trong không khí.</p>
+        <p><strong>Dụng cụ:</strong></p>
+        <ul>
+          <li>Ống trụ trong suốt, đường kính 40 mm, dài 670 mm, có thước đo.</li>
+          <li>Pít-tông thép bọc nhựa, vạch chuẩn, dây kéo, ròng rọc.</li>
+          <li>Máy phát tần số sin.</li>
+          <li>Loa điện động, hộp bảo vệ, cán thép, lỗ cắm điện.</li>
+          <li>Giá đỡ.</li>
+        </ul>
+        <p><strong>Tiến hành:</strong></p>
+        <ol>
+          <li>Bố trí thí nghiệm, đặt loa gần đầu hở ống trụ, cấp điện cho loa từ máy phát.</li>
+          <li>Chọn thang đo máy phát 100 Hz – 1 kHz, điều chỉnh tần số phù hợp.</li>
+          <li>Điều chỉnh biên độ để nghe âm vừa đủ to.</li>
+          <li>Kéo pít-tông, xác định vị trí thứ nhất khi âm to nhất, ghi chiều dài cột khí vào bảng.</li>
+          <li>Kéo tiếp pít-tông, xác định vị trí thứ hai khi âm lại to nhất, ghi chiều dài cột khí vào bảng.</li>
+          <li>Lặp lại các bước trên hai lần nữa, ghi số liệu vào bảng.</li>
+        </ol>
+
+        <div class="subsection-title">Báo cáo kết quả thí nghiệm</div>
+        <table>
+          <tr><th>Tần số</th><th>Lần</th><th>1</th><th>2</th><th>3</th><th>Giá trị TB (cm)</th><th>Sai số tuyệt đối (cm)</th></tr>
+          <tr><td rowspan="2">f = ...</td><td>L1 (cm)</td><td>15,1</td><td>15,0</td><td>15,1</td><td></td><td>0,093</td></tr>
+          <tr><td>L2 (cm)</td><td>50,1</td><td>50,3</td><td>50,2</td><td></td><td>0,167</td></tr>
+        </table>
+        <ul>
+          <li>Tính giá trị trung bình: <span class="formula-box">L_tb = (L_1 + L_2 + L_3)/3</span></li>
+          <li>Tính sai số: <span class="formula-box">ΔL = max|L_i - L_tb|</span></li>
+          <li>Tính sai số dụng cụ: bằng nửa độ chia nhỏ nhất trên thước.</li>
+          <li>Tính tốc độ truyền âm: v = fλ, với λ = 2ΔL</li>
+        </ul>
+
+        <div class="subsection-title">Sai số trong thí nghiệm</div>
+        <ul>
+          <li>Tín hiệu đầu vào bị nhiễu (gió, máy móc, người...)</li>
+          <li>Dụng cụ không ổn định, khe hở giữa pít-tông và ống...</li>
+          <li>Thao tác người đo (đọc số sai, không chọn đúng vị trí cộng hưởng...)</li>
+        </ul>
+        <p><strong>Cách khắc phục:</strong></p>
+        <ul>
+          <li>Hạn chế âm thanh nhiễu khi đo.</li>
+          <li>Kiểm tra dụng cụ trước khi đo.</li>
+          <li>Điều chỉnh pít-tông chậm, đọc số đúng góc.</li>
+        </ul>
+
+        <div class="section-title">II. BÀI TẬP VÍ DỤ</div>
+        <div class="content">
+          <p>Thực hiện thí nghiệm đo tốc độ truyền âm trong không khí, thu được bảng số liệu:</p>
+          <table>
+            <tr><th>Tần số</th><th>Lần</th><th>1</th><th>2</th><th>3</th><th>Giá trị TB (cm)</th><th>Sai số tuyệt đối (cm)</th></tr>
+            <tr><td rowspan="2">f = ...</td><td>L1 (cm)</td><td>15,1</td><td>15,0</td><td>15,1</td><td></td><td>0,093</td></tr>
+            <tr><td>L2 (cm)</td><td>50,1</td><td>50,3</td><td>50,2</td><td></td><td>0,167</td></tr>
+          </table>
+          <ul>
+            <li>Lấy sai số dụng cụ bằng nửa độ chia nhỏ nhất trên thước.</li>
+            <li>Tính: a) Giá trị trung bình; b) Sai số tuyệt đối; c) Sai số dụng cụ; d) Sai số tổng hợp; e) Kết quả đo tốc độ truyền âm.</li>
+          </ul>
+          <p><em>Hướng dẫn giải:</em></p>
+          <ul>
+            <li>a) L_tb = ...</li>
+            <li>b) ΔL = ...; sai số dụng cụ: ...</li>
+            <li>c) ...</li>
+            <li>d) ...</li>
+            <li>e) v = fλ = ...</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

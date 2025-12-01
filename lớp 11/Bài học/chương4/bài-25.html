@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHỦ ĐỀ 9 – THỰC HÀNH: ĐO TẦN SỐ CỦA SÓNG ÂM</title>
+    <link href="../../../css.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <style>
+      .lesson-title { background: linear-gradient(90deg,#0b6b9e,#2aa7d1); color:#fff; padding:12px 16px; border-radius:8px; }
+      .chapter-title { color:#023A5A; font-weight:700; }
+      .section-title { color:#0b6b9e; font-weight:600; margin-top:16px; }
+      .subsection-title { color:#056a8c; font-weight:600; margin-top:12px; }
+      .content { background:#fff; padding:14px; border-radius:8px; box-shadow:0 1px 4px rgba(2,40,60,0.06); }
+      .formula-box { background:#fff8e6; border-left:4px solid #ffb84d; padding:8px 12px; margin:8px 0; border-radius:4px; font-family:monospace; }
+      .example { background:#f7fbff; border-left:4px solid #2aa7d1; padding:8px 12px; margin:8px 0; border-radius:4px; }
+      table { border-collapse:collapse; width:100%; margin-top:8px; }
+      td, th { border:1px solid #e6eef5; padding:8px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chapter-title">CHƯƠNG II – SÓNG</div>
+      <div class="lesson-title">CHỦ ĐỀ 9 - THỰC HÀNH: ĐO TẦN SỐ CỦA SÓNG ÂM</div>
+
+      <div class="section-title">I. TÓM TẮT LÝ THUYẾT – PHƯƠNG PHÁP GIẢI CÁC DẠNG BÀI TẬP</div>
+      <div class="content">
+        <div class="subsection-title">1. Giới thiệu và hướng dẫn sử dụng dao động kí điện tử</div>
+        <p>Máy dao động kí điện tử có giao diện như hình 1.1.</p>
+        <p><b>Bước 1:</b> Nhấn nút <i>Power</i> để khởi động; màn hình sẽ hiện như hình 1.2.</p>
+        <p><b>Bước 2:</b> Điều chỉnh màn hình và vị trí thanh biểu diễn tín hiệu về trung tâm.</p>
+        <ul>
+          <li>Chọn kênh đo: bấm nút `CH1` hoặc `CH2`.</li>
+          <li>Điều chỉnh độ sáng màn hình: núm `Scale Illum`.</li>
+          <li>Điều chỉnh nét vạch tín hiệu: núm `Focus`.</li>
+          <li>Điều chỉnh độ sáng vạch: núm `Intensity`.</li>
+        </ul>
+        <p>Vị trí các núm được ghi chú trên hình 1. (xem tài liệu hình minh họa)</p>
+
+        <div class="subsection-title">2. Điều chỉnh vạch tín hiệu về trung tâm</div>
+        <p>XOay núm `Position` trên kênh `CH1` để dịch chuyển thanh ngang tín hiệu lên/xuống. Nếu vạch nằm lệch trái/phải, dùng `Position` để dịch chuyển ngang; nếu vạch không nằm ngang, chỉnh ốc như hình 1.7.</p>
+
+        <div class="subsection-title">3. Chọn chế độ đo: tần số / chu kì / điện áp</div>
+        <p><b>Bước 3:</b> Bấm nút `Mode` để chọn chế độ đo. Khi màn hình hiển thị <i>FRQ</i> là đo tần số; hiển thị <i>AV1</i> là đo điện áp (giá trị trung bình/đỉnh tuỳ máy).</p>
+
+        <div class="subsection-title">4. Chuẩn tín hiệu đo</div>
+        <p>Vặn các núm `VOLT` và `TIME` về bên phải, cắm que đo vào `CH1` và đầu que vào khe `CAL`. Bấm `AUTO SET` để kiểm tra dạng xung. Nếu thấy xung vuông, que đo OK. Điều chỉnh `Intensity`/`Focus` để quan sát rõ.</p>
+
+        <div class="subsection-title">5. Đọc chu kì, tần số và điện áp trên màn hình</div>
+        <p>Ví dụ: Chu kì T = 5 ô × 0,2 ms = 1 ms = 0,001 s. Để đo tần số, chọn chế độ FRQ; màn hình có thể hiển thị `1.00 kHz`. Công thức liên hệ:</p>
+        <div class="formula-box">f = 1 / T</div>
+        <p>Đo điện áp: khoảng cách từ biên dương tới biên âm = 2 ô, mỗi ô = 0,5 V ⇒ Vpp = 2 × 0,5 = 1 V.</p>
+
+        <div class="subsection-title">2. Cơ sở lý thuyết</div>
+        <ul>
+          <li>Sóng âm do âm thoa hoặc loa phát ra thường có dạng sin.</li>
+          <li>Chu kì T: khoảng thời gian giữa hai vị trí dao động cùng pha (ví dụ hai biên dương liên tiếp).</li>
+          <li>Tần số f: số dao động trong 1 s, f = 1/T (Hz).</li>
+          <li>Tín hiệu từ micro sang dao động kí giữ nguyên tần số: fâm = fdien.</li>
+        </ul>
+
+        <div class="subsection-title">3. Dụng cụ thí nghiệm</div>
+        <ul>
+          <li>Nguồn âm: loa điện động hoặc âm thoa + búa.</li>
+          <li>Micro: biến dao động âm thành điện.</li>
+          <li>Máy phát tần số: khuếch đại tín hiệu micro và đưa vào dao động kí.</li>
+          <li>Dao động kí: hiển thị đồ thị dao động.</li>
+        </ul>
+
+        <div class="subsection-title">4. Tiến hành thí nghiệm</div>
+        <ol>
+          <li>Bố trí sơ đồ thí nghiệm; cấp nguồn cho dao động kí và máy phát tần số.</li>
+          <li>Bật micro, máy phát và dao động kí.</li>
+          <li>Đặt âm thoa trước micro, gõ nhẹ bằng búa tạo âm; micro sẽ chuyển thành tín hiệu điện.</li>
+          <li>Điều chỉnh dao động kí để ghi nhận tín hiệu; lặp lại thí nghiệm ít nhất 3 lần cho mỗi nguồn âm.</li>
+        </ol>
+
+        <div class="subsection-title">5. Kết quả thí nghiệm (mẫu)</div>
+        <table>
+          <tr><th>Nguồn âm</th><th>Lần</th><th>Chu kì T (ms)</th><th>Tần số f (Hz)</th><th>Tần số trung bình (Hz)</th><th>Sai số tuyệt đối (Hz)</th></tr>
+          <tr><td>Âm thoa</td><td>1</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td>2</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td>3</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>Loa điện động</td><td>1</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td>2</td><td></td><td></td><td></td><td></td></tr>
+          <tr><td></td><td>3</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+
+        <div class="subsection-title">Xử lí kết quả</div>
+        <ol>
+          <li>Tính tần số từng lần đo: f = 1/T.</li>
+          <li>Tính tần số trung bình: 
+            <div class="formula-box">f̄ = (f1 + f2 + ... + fn) / n</div>
+          </li>
+          <li>Tính sai số tuyệt đối: |f_i - f̄| và lấy giá trị lớn nhất làm sai số tuyệt đối của phép đo.</li>
+          <li>Sai số dụng cụ thường lấy nửa độ chia nhỏ nhất (hoặc theo thỏa thuận với giáo viên).</li>
+        </ol>
+
+        <div class="subsection-title">6. Sai số trong thí nghiệm</div>
+        <p>Nguyên nhân gây sai số: tạp âm, kết nối dây không ổn định, sai số thao tác (vị trí quan sát). Khắc phục: thực hiện nơi yên tĩnh, chuẩn tín hiệu, đứng vuông góc màn hình khi đọc kết quả.</p>
+
+        <div class="subsection-title">7. Phương pháp giải các dạng bài tập</div>
+        <p><b>Dạng 1:</b> Xử lí số liệu đo: tính trung bình, sai số.</p>
+        <p><b>Dạng 2:</b> Đọc kết quả từ màn hình dao động kí.</p>
+
+        <div class="example">
+          <b>Ví dụ 1:</b> Kết quả đo (mẫu) đã cho trong bảng: tính tần số các lần đo, tần số trung bình và sai số tuyệt đối (xem ví dụ chi tiết trong tài liệu lớp).
+        </div>
+
+        <div class="example">
+          <b>Ví dụ 2:</b> Cho dạng sóng trên dao động kí ở thang 1 V/div và 1 ms/div.
+          <ol>
+            <li>So sánh tần số hai tín hiệu A và B: nếu trong cùng khoảng thời gian B thực hiện nhiều dao động hơn A ⇒ f_B &gt; f_A.</li>
+            <li>Tính biên độ: ví dụ 2·A_A = 4,5 ô ⇒ A_A = 2,25 V; 2·A_B = 2 ô ⇒ A_B = 1 V.</li>
+            <li>Tính chu kì và tần số: ví dụ 2·T_A = 8,8 ô = 8,8 ms ⇒ T_A = 4,4 ms ⇒ f_A ≈ 227 Hz; 6·T_B = 8,8 ô = 8,8 ms ⇒ T_B ≈ 1,47 ms ⇒ f_B ≈ 680 Hz.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

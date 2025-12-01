@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chủ đề 2 - Mô tả dao động điều hòa</title>
+		<link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../css.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="chapter-title">CHỦ ĐỀ 2</div>
+		<div class="lesson-title">MÔ TẢ DAO ĐỘNG ĐIỀU HÒA</div>
+
+		<div class="section-title">I. TÓM TẮT LÝ THUYẾT – PHƯƠNG PHÁP GIẢI</div>
+
+		<div class="subsection-title">1. Các đại lượng đặc trưng của dao động điều hoà</div>
+		<div class="content">
+			<p>Trong phương trình x = A cos(ωt + φ) thì:</p>
+			<ul>
+				<li><strong>Li độ x:</strong> là độ dịch chuyển từ vị trí cân bằng đến vị trí của vật tại thời điểm t (m, cm, mm).</li>
+				<li><strong>Biên độ A:</strong> là độ dịch chuyển cực đại của vật tính từ vị trí cân bằng; xmax = A &gt; 0.</li>
+				<li><strong>Chu kì T:</strong> là khoảng thời gian để thực hiện một dao động, đơn vị giây (s).</li>
+				<li><strong>Tần số f:</strong> số dao động vật thực hiện trong 1 giây, đơn vị Hz; f = 1/T.</li>
+				<li><strong>Tần số góc ω:</strong> đặc trưng cho tốc độ biến thiên của pha, đơn vị rad/s. ω = 2πf = 2π/T.</li>
+			</ul>
+			<p>Kết luận: A, T, f, ω là các đại lượng đặc trưng cho dao động điều hoà và không phụ thuộc vào thời điểm quan sát.</p>
+		</div>
+
+		<div class="subsection-title">2. Pha của dao động và độ lệch pha</div>
+		<div class="content">
+			<div class="key-point">
+				<strong>a. Pha của dao động:</strong>
+				<div class="sub-content">Trong x = A cos(ωt + φ) thì (ωt + φ) là pha của dao động tại thời điểm t (đơn vị rad). Với biên độ đã cho, pha xác định trạng thái (li độ và vận tốc) của vật tại thời điểm đó. Tại t = 0, pha ban đầu = φ.</div>
+			</div>
+
+			<div class="key-point">
+				<strong>b. Độ lệch pha giữa hai dao động cùng chu kì:</strong>
+				<div class="sub-content">Xét hai dao động:</div>
+				<div class="formula-box"><pre>x1 = A1 cos(ωt + φ1)
+x2 = A2 cos(ωt + φ2)</pre></div>
+				<div class="sub-content">Độ lệch pha Δφ = φ2 - φ1 (không đổi theo thời gian nếu cùng ω).</div>
+				<div class="sub-content">
+					<div class="list-item">φ1 &gt; φ2: dao động 1 sớm pha hơn dao động 2.</div>
+					<div class="list-item">φ1 &lt; φ2: dao động 1 trễ pha hơn dao động 2.</div>
+					<div class="list-item">φ1 = φ2: cùng pha.</div>
+					<div class="list-item">φ1 = φ2 + π: ngược pha.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="subsection-title">3. Bài tập ví dụ</div>
+		<div class="content">
+			<div class="key-point"><strong>Ví dụ 1:</strong> Đồ thị li độ - thời gian của một vật dao động điều hoà như hình.
+				<ol>
+					<li>Xác định A, T, f, ω, pha ban đầu và viết phương trình dao động.</li>
+					<li>Xác định pha và li độ tại t = 2,5 s.</li>
+				</ol>
+				<p><strong>Hướng dẫn:</strong> Từ đồ thị ta có A = 4 cm; T = 2 s; f = 1/T = 0.5 Hz; ω = 2πf = π (rad/s). Khi t = 0, x = 4 → cos φ = 1 → φ = 0. Phương trình: x = 4 cos(π t) (cm). Tại t = 2.5 s: pha = ωt = π·2.5 = 2.5π (rad) — tương đương với 0 mod 2π ? (tính trực tiếp theo đơn vị rad); x(2.5) = 4 cos(π·2.5) = 4 cos(2.5π) = 0 (cm).</p>
+			</div>
+
+			<div class="key-point"><strong>Ví dụ 2:</strong> Xác định độ lệch pha của hai dao động biểu diễn trong đồ thị li độ - thời gian.</div>
+			<p><strong>Hướng dẫn:</strong></p>
+			<ul>
+				<li>Chu kì T = 0.2 s.</li>
+				<li>Độ lệch thời gian Δt giữa hai dao động khi cùng trạng thái = 0.05 s.</li>
+				<li>Độ lệch pha Δφ = ω Δt = (2π/T)·Δt = (2π / 0.2)·0.05 = 2π·0.25 = π/2 (rad).</li>
+			</ul>
+		</div>
+
+		<hr style="margin: 30px 0; border: none; border-top: 2px solid #ccc;">
+
+		<div class="section-title">Ghi chú</div>
+		<div class="content">Bạn có thể chèn đồ thị minh họa li độ-thời gian vào các ví dụ để học sinh phân tích.</div>
+
+	</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BÀI 26: THỰC HÀNH ĐO SUẤT ĐIỆN ĐỘNG VÀ ĐIỆN TRỞ TRONG CỦA PIN</title>
+		<link href="../../../css.css" rel="stylesheet">
+		<link href="../styles.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="chapter-title">CHƯƠNG 2</div>
+			<div class="lesson-title">BÀI 26: THỰC HÀNH ĐO SUẤT ĐIỆN ĐỘNG VÀ ĐIỆN TRỞ TRONG CỦA PIN ĐIỆN HÓA</div>
+
+			<div class="section-title">I. TÓM TẮT LÝ THUYẾT</div>
+
+			<div class="content">
+				<p>Xét một mạch điện gồm một nguồn điện có suất điện động ξ và điện trở trong r mắc nối tiếp với mạch ngoài bao gồm biến trở Rx mắc nối tiếp với một điện trở R có giá trị xác định (hình 1). Khi đóng khóa K, trong mạch xuất hiện dòng điện có cường độ I và được xác định bằng công thức:</p>
+				<div class="formula-box"><pre>I = ξ / (R + r + Rx)</pre></div>
+
+				<p>Từ công thức trên, ta có thể vẽ đồ thị mô tả mối quan hệ giữa U và I (hình 2). Tại vị trí cường độ dòng điện I = 0, ta có U = ξ. Lấy hai điểm (I1, U1) và (I2, U2) trên đồ thị, ta có:</p>
+				<div class="formula-box"><pre>ξ = U + I·r</pre></div>
+				<p>Từ đó có thể suy ra hệ thức để tính r bằng cách chọn hai điểm và tính hệ số góc của đường thẳng U(I).</p>
+
+				<h4>Thí nghiệm đo suất điện động và điện trở trong của pin điện hóa</h4>
+				<p><strong>Mục đích:</strong> Đo suất điện động ξ và điện trở trong r của pin chưa qua sử dụng và pin đã qua sử dụng.</p>
+
+				<p><strong>Dụng cụ thí nghiệm:</strong></p>
+				<ul>
+					<li>Hai pin điện hóa (một pin chưa qua sử dụng, một pin đã qua sử dụng).</li>
+					<li>Một biến trở 100 Ω.</li>
+					<li>Một điện trở đã biết giá trị.</li>
+					<li>Hai đồng hồ đo (Vôn kế và Ampe kế) hoặc đồng hồ đa năng số.</li>
+					<li>Khóa K, bảng lắp mạch và dây nối.</li>
+				</ul>
+
+				<h4>Tiến hành thí nghiệm (pin cũ):</h4>
+				<ol>
+					<li>Bố trí thí nghiệm theo sơ đồ (hình 1). Kiểm tra mạch điện và chọn thang đo thích hợp cho Ampe kế và Vôn kế.</li>
+					<li>Điều chỉnh biến trở đến Rx = 100 Ω.</li>
+					<li>Đóng khóa K, bật đồng hồ đo hiệu điện thế và cường độ dòng điện.</li>
+					<li>Ghi giá trị U và I vào Bảng 1. Ngắt khóa K.</li>
+					<li>Lặp lại các bước 2–4 với Rx giảm dần (thực hiện khoảng 5 lần để có tập dữ liệu).</li>
+					<li>Đánh dấu các điểm thực nghiệm lên hệ trục tọa độ (U – I) và vẽ đường thẳng gần nhất đi qua các điểm.</li>
+					<li>Kéo dài đường để cắt trục tung tại U0; giá trị U0 chính là suất điện động ξ của pin.</li>
+					<li>Chọn hai điểm A và B trên đồ thị với các giá trị (U1, I1) và (U2, I2) rồi tính điện trở trong r bằng công thức:</li>
+				</ol>
+				<div class="formula-box"><pre>r = (U1 - U2) / (I2 - I1)</pre></div>
+				<p>(Lưu ý đổi đơn vị I sang A nếu I đo bằng mA.)</p>
+				<p>Ước lượng sai số có thể thực hiện bằng đồ thị hoặc quy đổi theo sai số thiết bị.</p>
+
+				<h4>Thực hiện thí nghiệm với pin mới:</h4>
+				<ol>
+					<li>Thay pin mới vào mạch.</li>
+					<li>Lặp lại các bước thí nghiệm giống như với pin cũ.</li>
+				</ol>
+
+				<h4>Báo cáo kết quả:</h4>
+				<p>Sử dụng Bảng 1 để ghi số liệu:</p>
+				<pre>
+STT	Pin cũ		Pin mới
+		R = 10 Ω	R = 10 Ω
+Rx (Ω)	U (V)	I (mA)	Rx (Ω)	U (V)	I (mA)
+1
+2
+3
+4
+5
+...
+				</pre>
+
+				<h4>Xử lý kết quả</h4>
+				<p>Đối với pin cũ: vẽ đồ thị U – I, xác định ξ từ giao điểm với trục U, tính r từ hai điểm tùy chọn hoặc từ hệ số góc.</p>
+				<p>Đối với pin mới: làm tương tự và so sánh ξ, r giữa pin mới và pin cũ.</p>
+
+				<h4>Sai số trong thí nghiệm</h4>
+				<p>Một số nguyên nhân gây sai số:</p>
+				<ul>
+					<li>Chui cắm, khóa K bị lỏng.</li>
+					<li>Lựa chọn thang đo không phù hợp trên đồng hồ đa năng.</li>
+					<li>Thao tác thí nghiệm chưa đúng.</li>
+					<li>Đọc và ghi giá trị chưa chính xác.</li>
+					<li>Trong các thiết bị (dây dẫn, đồng hồ đa năng...) có điện trở.</li>
+				</ul>
+				<p>Cách khắc phục:</p>
+				<ul>
+					<li>Thay đổi chui cắm, khóa K hoặc bảng lắp mạch điện.</li>
+					<li>Điều chỉnh thang đo trên đồng hồ đa năng cho phù hợp.</li>
+					<li>Thực hiện thao tác thí nghiệm đúng quy trình.</li>
+				</ul>
+			</div>
+
+		</div>
+	</body>
+</html>
+

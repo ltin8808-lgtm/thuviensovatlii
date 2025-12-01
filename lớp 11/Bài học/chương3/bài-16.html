@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BÀI 19 – ĐIỆN THẾ</title>
+    <link href="../../../css.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      .lesson-title { background: linear-gradient(90deg,#0b6b9e,#2aa7d1); color:#fff; padding:12px 16px; border-radius:8px; }
+      .chapter-title { color:#023A5A; font-weight:700; }
+      .section-title { color:#0b6b9e; font-weight:600; margin-top:16px; }
+      .subsection-title { color:#056a8c; font-weight:600; margin-top:12px; }
+      .content { background:#fff; padding:14px; border-radius:8px; box-shadow:0 1px 4px rgba(2,40,60,0.06); }
+      .formula-box { background:#fff8e6; border-left:4px solid #ffb84d; padding:8px 12px; margin:8px 0; border-radius:4px; font-family:monospace; }
+      .example { background:#f7fbff; border-left:4px solid #2aa7d1; padding:8px 12px; margin:8px 0; border-radius:4px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="chapter-title">CHƯƠNG 3 – ĐIỆN TRƯỜNG</div>
+      <div class="lesson-title">BÀI 19 – ĐIỆN THẾ</div>
+
+      <div class="section-title">I. TÓM TẮT LÝ THUYẾT – PHƯƠNG PHÁP GIẢI</div>
+
+      <div class="content">
+        <div class="subsection-title">1. Điện thế tại một điểm trong điện trường</div>
+        <p>Xét một điện tích q &gt; 0 được bắn vào một vùng không gian có điện trường đều với cường độ điện trường là E, lực điện tác dụng lên điện tích q khi đó có độ lớn F = qE. Chọn gốc thế năng tại vô cùng, công sinh ra của lực điện khi dịch chuyển điện tích từ vô cực đến điểm M là A = W_M.</p>
+
+        <p>Trong đó V_M là đại lượng không phụ thuộc vào điện tích q mà chỉ phụ thuộc vào điện trường tại điểm M và được gọi là điện thế tại điểm M.</p>
+
+        <p>Định nghĩa: Điện thế tại một điểm trong điện trường đặc trưng cho điện trường tại điểm đó về thế năng, được xác định bằng công dịch chuyển một đơn vị điện tích dương (+1 C) từ vô cực đến điểm đó:</p>
+        <div class="formula-box"><pre>V = A_{vôcực→M} / q</pre></div>
+
+        <p>Trong đó: V là điện thế tại điểm đó (V); A là công dịch chuyển điện tích từ vô cực đến điểm đó (J).</p>
+
+        <p>Mở rộng: Điện thế tại một điểm trong điện trường do nhiều điện tích tạo ra bằng tổng algebric các thế do từng điện tích gây ra:</p>
+        <div class="formula-box"><pre>V = V_1 + V_2 + V_3 + ...</pre></div>
+
+        <div class="subsection-title">2. Mối liên hệ giữa điện thế và cường độ điện trường</div>
+        <p>- Mối liên hệ giữa thế năng điện và điện thế: W = qV.</p>
+
+        <p>- Trong thực tế, khi xét sự dịch chuyển của một điện tích q từ điểm M đến điểm N trong điện trường, hiệu điện thế giữa M và N được định nghĩa là:</p>
+        <div class="formula-box"><pre>V_{MN} = V_M - V_N = A_{vôcực→M}/q - A_{vôcực→N}/q</pre></div>
+
+        <p>Khi đó, công thực hiện để dịch chuyển điện tích q từ điểm M đến điểm N bằng:</p>
+        <div class="formula-box"><pre>A_{MN} = q (V_M - V_N) = q · V_{MN}</pre></div>
+
+        <p>Xét một điện tích dương chuyển động dọc theo các đường sức điện từ điểm M đến N trong điện trường đều, ta thấy vector cường độ điện trường E hướng theo chiều giảm của điện thế. Chọn chiều dương của trục tọa độ là chiều đường sức, khi đó:</p>
+        <div class="formula-box"><pre>V_M - V_N = E · d</pre></div>
+        <p>Với d là khoảng cách giữa hai điểm trên phương của vector cường độ điện trường.</p>
+
+        <p>Lưu ý:</p>
+        <ul>
+          <li>Nếu E cùng chiều với chiều dương của d thì V_M - V_N = E d &gt; 0.</li>
+          <li>Nếu E ngược chiều với chiều dương của d thì V_M - V_N = -E d &lt; 0.</li>
+        </ul>
+
+        <p>Định nghĩa: Cường độ điện trường tại điểm M có độ lớn bằng thương của hiệu điện thế giữa hai điểm M và N trên một đoạn thẳng nhỏ đường sức chia cho độ dài đại số của đoạn đường sức đó:</p>
+        <div class="formula-box"><pre>E = - dV/ds  (theo dạng vi phân, dấu trừ chỉ chiều giảm thế)</pre></div>
+
+        <div class="subsection-title">PHƯƠNG PHÁP GIẢI</div>
+        <p>DẠNG 1. XÁC ĐỊNH ĐỘ LỚN CỦA CƯỜNG ĐỘ ĐIỆN TRƯỜNG E, ĐIỆN THẾ TẠI MỘT ĐIỂM.</p>
+        <p>Áp dụng các công thức: W = qV; V_M - V_N = E d; V = kQ/r (với mốc ở vô cực) ...</p>
+
+        <div class="example">
+          <p><strong>Ví dụ 1:</strong> Một hạt bụi mang điện tích q = 10^{-3} C đặt tại điểm N, nằm giữa hai bản kim loại song song, tích điện trái dấu, có độ lớn bằng nhau và cách bản âm 2,0 cm. Chọn mốc điện thế tại bản âm, người ta đo được thế năng điện tại điểm N là W_N = 0,5 J. Cường độ điện trường giữa hai bản kim loại là:</p>
+          <ol type="A">
+            <li>500 V/m.</li>
+            <li>25000 V/m.</li>
+            <li>250 V/m.</li>
+            <li>50000 V/m.</li>
+          </ol>
+          <p><em>Hướng dẫn:</em></p>
+          <div class="formula-box"><pre>Hiệu điện thế từ N đến bản âm: V_N - V_{bản âm} = W_N / q
+Chọn V_{bản âm} = 0 => V_N = W_N/q
+V_N = 0.5 / 10^{-3} = 500 V
+Khoảng cách đến bản âm d = 0.02 m
+E = V/d = 500 / 0.02 = 25000 V/m</pre></div>
+        </div>
+
+        <div class="example">
+          <p><strong>Ví dụ 2:</strong> Thế năng tĩnh điện của một electron tại điểm M trong điện trường của một điện tích điểm là W = -3,2·10^{-18} J (mốc vô cực). Điện thế tại điểm M bằng:</p>
+          <ol type="A">
+            <li>-20 V.</li>
+            <li>32 V.</li>
+            <li>20 V.</li>
+            <li>-32 V.</li>
+          </ol>
+          <p><em>Hướng dẫn:</em> Điện thế V_M = W/q. Với q_{electron} = -1,6·10^{-19} C:</p>
+          <div class="formula-box"><pre>V_M = W / q = (-3{,}2·10^{-18}) / (-1{,}6·10^{-19}) = 20
+ i.e. 20 V (chọn đáp án C)</pre></div>
+        </div>
+
+        <div class="subsection-title">DẠNG 2. TÌM HIỆU ĐIỆN THẾ GIỮA HAI ĐIỂM</div>
+        <div class="example">
+          <p><strong>Ví dụ 3:</strong> Một điện tích q = 10^{-6} C di chuyển từ điểm A đến điểm B trong một điện trường, thì được năng lượng 2·10^{-4} J. Hiệu điện thế giữa hai điểm A và B là:</p>
+          <ol type="A">
+            <li>200 V.</li>
+            <li>-20 V.</li>
+            <li>-40 V.</li>
+            <li>400 V.</li>
+          </ol>
+          <p><em>Hướng dẫn:</em> A_{AB} = q (V_A - V_B) = 2·10^{-4} J → V_A - V_B = A/q = 2·10^{-4} / 10^{-6} = 200 V.</p>
+        </div>
+
+        <div class="example">
+          <p><strong>Ví dụ 4:</strong> Trong một vùng không gian có điện trường đều (E), xét ba điểm A, B và C tạo thành một tam giác vuông tại A, trong đó cạnh AB song song với các đường sức. Cho BC = 10 cm và (ghi thiếu trong đề — giả sử chiều BC vuông góc với đường sức). Biết hiệu điện thế giữa hai điểm B và C bằng 100 V. Hiệu điện thế giữa 2 điểm A,C và giữa hai điểm A,B lần lượt là: (các biểu thức phụ thuộc vào hình vẽ và dữ kiện cụ thể).</p>
+          <p><em>Hướng dẫn:</em> Tính E từ V_B - V_C = E·(khoảng cách song song với đường sức), sau đó dùng quan hệ để tìm các hiệu thế khác: V_A - V_C, V_A - V_B.</p>
+        </div>
+
+        <div class="subsection-title">DẠNG 3: TÌM VẬN TỐC CỦA MỘT ĐIỆN TÍCH TRONG ĐIỆN TRƯỜNG ĐỀU...</div>
+        <div class="example">
+          <p><strong>Ví dụ 5:</strong> Hai bản kim loại giống nhau A và B đặt song song cách nhau 5 mm, tích điện bằng nhau nhưng trái dấu và chúng tạo ra một điện trường đều. Biết bản A tích điện dương và bản B tích điện âm. Hiệu điện thế giữa hai bản là U_{AB} = 25 V. Bên trong không gian, một hạt electron bắt đầu chuyển động từ bản B. Tính tốc độ của electron khi đến bản A.</p>
+          <p><em>Hướng dẫn (tóm tắt):</em></p>
+          <div class="formula-box"><pre>E = U/d = 25 / 0.005 = 5000 V/m
+ Công của lực điện: A = q U
+ Độ biến thiên động năng ΔK = -A (electron mang q<0, ký hiệu đúng hướng cần xét dấu)
+ v = sqrt(2 ΔK / m)
+ Áp dụng số liệu để tính v.</pre></div>
+        </div>
+
+        <div class="example">
+          <p><strong>Ví dụ 6:</strong> Trong điện trường của một điện tích Q cố định, công để dịch chuyển một điện tích q từ vô cùng về điểm M cách Q một khoảng r có giá trị bằng k Q q / r. M là một điểm cách Q một khoảng 1 m và N là một điểm cách Q một khoảng 2 m. Hiệu điện thế V_{MN} là:</p>
+          <ol type="A">
+            <li>3,6 V.</li>
+            <li>7,2 V.</li>
+            <li>1,8 V.</li>
+            <li>5,4 V.</li>
+          </ol>
+          <p><em>Hướng dẫn:</em> V_M = kQ/r_M, V_N = kQ/r_N ⇒ V_M - V_N = kQ(1/r_M - 1/r_N). Với r_M =1, r_N =2 → V_M - V_N = kQ(1 - 1/2) = (kQ)/2. Giá trị cụ thể phụ thuộc vào Q.</p>
+        </div>
+
+        <div class="example">
+          <p><strong>Ví dụ 7:</strong> Có ba điện tích điểm q_1, q_2, q_3 đặt tại ba đỉnh của tam giác đều ABC, cạnh 10 cm. Điện thế tại tâm O do ba điện tích gây ra là ?</p>
+          <p><em>Hướng dẫn:</em> Tính khoảng cách từ tâm O tới mỗi đỉnh (bằng R = \,tục tính từ hình học tam giác đều) rồi cộng đại số các V_i = k q_i / R.</p>
+        </div>
+
+        <p style="margin-top:12px;color:#444">Muốn tôi chèn lời giải chi tiết cho từng ví dụ, thêm hình vẽ (SVG) minh họa, hoặc bật MathJax để công thức hiển thị đẹp không?</p>
+      </div>
+    </div>
+  </body>
+</html>
